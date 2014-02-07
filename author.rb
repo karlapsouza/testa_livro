@@ -34,7 +34,7 @@ btnBuscaA = driver.find_element(:css, "input.doSearch")
 btnBuscaA.click
 #CLICA NO LIVRO
 puts "Click no primeiro livro encontrado"
-livroA = driver.find_element(:css, "img.photo")
+livroA = driver.find_element(:xpath,"//a[@rel='product']")
 livroA.click
 #BUSCAR NOME AUTOR
 puts "Obtendo nome do autor."
